@@ -15,11 +15,11 @@ If the repo already has commits: `git pull origin main --rebase` before pushing.
 
 ## 3. Permissions and secrets
 - **Snake (required):** Settings → Actions → General → Workflow permissions → *Read and write permissions* → Save. No secret needed; the built-in `GITHUB_TOKEN` is enough.
-- **Metrics (optional):** create a classic PAT at github.com/settings/tokens with `read:user` and `repo`, then add it under Settings → Secrets and variables → Actions as `METRICS_TOKEN`. Never commit it.
-- All other cards (stats, streak, languages, trophies, visitors) need no keys.
+- **Summary cards:** uses the built-in `GITHUB_TOKEN`. If the run fails with "Resource not accessible by integration", create a PAT (`read:user`, `repo`), save it as a secret named `SUMMARY_GITHUB_TOKEN`, and use that name in `.github/workflows/profile-summary-cards.yml`.
+- The streak card and visitor counter need no keys.
 
 ## 4. Run the workflows once
-Actions tab → *Generate contribution snake* → Run workflow. It creates the `output` branch containing `github-snake.svg` and `github-snake-dark.svg`. Repeat for *Metrics* if you set the secret.
+Actions tab → *Generate contribution snake* → Run workflow. It creates the `output` branch containing `github-snake.svg` and `github-snake-dark.svg`. Then run **Profile summary cards**. It commits a `profile-summary-card-output/` folder to `main`; the activity cards in the README read from it.
 
 ## 5. Verify
 1. Open github.com/playingkinggame in a private window and hard-refresh.
