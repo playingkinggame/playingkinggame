@@ -121,15 +121,19 @@ Technologies I'm learning and building with, grouped by area. This is a list of 
 These cards are generated from my real GitHub data by GitHub Actions and stored in this repository, so they do not depend on an external image server.
 
 <div align="center">
-
-<img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=playingkinggame&theme=dark&background=0A0E1A&ring=A855F7&fire=22D3EE&currStreakLabel=22D3EE&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9D1D9&dates=8B949E&stroke=1E2A4A&border=1E2A4A">
-
-<img height="190" alt="GitHub profile details" src="./profile-summary-card-output/tokyonight/0-profile-details.svg">
-<img height="190" alt="Repositories per language" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg">
-<br>
-<img height="190" alt="Most committed languages" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg">
-<img height="190" alt="GitHub stats" src="./profile-summary-card-output/tokyonight/3-stats.svg">
-
+<table>
+  <tr>
+    <td colspan="2" align="center"><img width="100%" alt="GitHub profile details" src="./profile-summary-card-output/tokyonight/0-profile-details.svg"></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><img width="100%" alt="Top languages by repository" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg"></td>
+    <td width="50%" align="center"><img width="100%" alt="Top languages by commit" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg"></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><img width="100%" alt="GitHub stats" src="./profile-summary-card-output/tokyonight/3-stats.svg"></td>
+    <td width="50%" align="center"><img width="100%" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=playingkinggame&theme=dark&background=0A0E1A&ring=A855F7&fire=22D3EE&currStreakLabel=22D3EE&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9D1D9&dates=8B949E&stroke=1E2A4A&border=1E2A4A"></td>
+  </tr>
+</table>
 </div>
 
 <div align="center"><img src="./assets/separators/aurora.svg" alt="" width="100%"></div>
